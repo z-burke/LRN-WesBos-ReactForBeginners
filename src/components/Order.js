@@ -27,7 +27,6 @@ class Order extends React.Component {
             const count = this.props.order[key];
             const isAvailable = fish && fish.status === "available";
             if (isAvailable) {
-                console.log(fish.price);
                 return prevTotal + count * fish.price;
             }
             return prevTotal;
